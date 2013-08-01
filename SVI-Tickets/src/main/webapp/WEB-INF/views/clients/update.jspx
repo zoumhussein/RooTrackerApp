@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_fr_leburcom_svi_tickets_Client" modelAttribute="client" path="/clients" versionField="Version" z="dI8ZCsC8fqI2wpTGIW40PtTA4WE=">
+        <field:textarea field="name" id="c_fr_leburcom_svi_tickets_Client_name" required="true" z="6q27yMvpvn3zkg7jB5yu/+N26Hw="/>
+        <field:textarea field="firstname" id="c_fr_leburcom_svi_tickets_Client_firstname" required="true" z="VIPTESVh3W1VlqcQEVwYMj6IkaU="/>
+        <field:textarea field="email" id="c_fr_leburcom_svi_tickets_Client_email" required="true" validationMessageCode="field_invalid_email" z="K74O+XjCTNi1c1bePUun2icE+zQ="/>
+        <field:textarea field="password" id="c_fr_leburcom_svi_tickets_Client_password" required="true" z="woISFXZBOEtUMtRFqxYzeN/hrVg="/>
+        <field:simple field="tickets" id="c_fr_leburcom_svi_tickets_Client_tickets" messageCode="entity_reference_not_managed" messageCodeAttribute="Ticket" z="wrLSWOcIczv2EgY0wtVQlq6Di40="/>
+    </form:update>
+</div>

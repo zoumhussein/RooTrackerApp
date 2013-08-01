@@ -1,0 +1,34 @@
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-08-01 14:43:35
+project --topLevelPackage fr.leburcom.svi.tickets --projectName SVI-Tickets --java 6 --packaging WAR
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-08-01 14:43:40
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-08-01 14:55:18
+hint
+jpa setup --database HYPERSONIC_PERSISTENT --provider HIBERNATE 
+hint
+entity jpa --class fr.leburcom.svi.tickets.Client
+field string --fieldName name --notNull --sizeMax 50
+field string --fieldName firstname --notNull --sizeMax 50
+field string --fieldName email --notNull --sizeMax 100
+field string --fieldName password --notNull --sizeMax 255
+entity jpa --class ~.Ticket
+field string --fieldName subject --notNull 
+field string --fieldName component --notNull
+field string --fieldName description --notNull 
+// [failed] field date --fieldName date --type java.util.Date
+field date --fieldName detectionDate --type java.util.Date
+entity jpa --class ~.Developper
+// [failed] field set --type ~.Client --fieldName client --cardinality MANY_TO_ONE --mappedBy --class ~.Ticket
+field set --type ~.Client --fieldName client --cardinality ONE_TO_MANY --mappedBy --class ~.Ticket
+// [failed] field set --type ~.Client --fieldName client --cardinality ONE_TO_ONE --class ~.Ticket
+field set --type ~.Ticket --fieldName tickets --cardinality ONE_TO_MANY --class ~.Client
+field set --type ~.Ticket --fieldName tickets --cardinality ONE_TO_MANY --class ~.Developper
+// [failed] field set --type ~.Client --fieldName client --cardinality ONE_TO_ONE --class ~.Ticket
+hint
+controller all --package fr.leburcom.svi.tickets.web
+focus --class ~.Ticket
+enum type --class fr.leburcom.svi.tickets.TicketStatus
+focus --class ~.Ticket
+field enum --fieldName status --type ~.TicketStatus
+field reference --fieldName client --type ~.Client
+field reference --fieldName developper --type ~.Developper
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-08-01 16:31:09

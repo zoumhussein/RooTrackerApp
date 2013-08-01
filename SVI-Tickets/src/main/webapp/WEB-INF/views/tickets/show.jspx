@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_fr_leburcom_svi_tickets_Ticket" object="${ticket}" path="/tickets" z="hHBIb7ztduH50okp8Cb+xOcCi+Q=">
+        <field:display field="subject" id="s_fr_leburcom_svi_tickets_Ticket_subject" object="${ticket}" z="hgCsZH7Va5jIfrdzxxCbWO9oEiM="/>
+        <field:display field="component" id="s_fr_leburcom_svi_tickets_Ticket_component" object="${ticket}" z="RKEN/hk96Le18wAqSyUPutz5dqc="/>
+        <field:display field="description" id="s_fr_leburcom_svi_tickets_Ticket_description" object="${ticket}" z="oPcIj31Loav6fA0bxwSQiNKPu2E="/>
+        <field:display date="true" dateTimePattern="${ticket_detectiondate_date_format}" field="detectionDate" id="s_fr_leburcom_svi_tickets_Ticket_detectionDate" object="${ticket}" z="Ew+x6Oq8ntWrfCZEn67TC/EqChw="/>
+        <field:display date="true" dateTimePattern="${ticket_correctiondate_date_format}" field="correctionDate" id="s_fr_leburcom_svi_tickets_Ticket_correctionDate" object="${ticket}" z="i+ihPvi2r2fP7SabQ5AsDeFJeI8="/>
+        <field:display field="status" id="s_fr_leburcom_svi_tickets_Ticket_status" object="${ticket}" z="kuzwvyxvL67CB/B476QH3O4Dc3M="/>
+        <field:display field="client" id="s_fr_leburcom_svi_tickets_Ticket_client" object="${ticket}" z="iGYUXdavd/emknDVycLerfse+FI="/>
+        <field:display field="developper" id="s_fr_leburcom_svi_tickets_Ticket_developper" object="${ticket}" z="kj4azpWIt+V3qvuHDSJZZtF85io="/>
+    </page:show>
+</div>

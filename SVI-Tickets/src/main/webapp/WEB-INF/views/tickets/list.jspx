@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_fr_leburcom_svi_tickets_Ticket" items="${tickets}" z="2RokN8/jpynQKD6fbEOdHnC95u4=">
+        <table:table data="${tickets}" id="l_fr_leburcom_svi_tickets_Ticket" path="/tickets" z="V5zim8Zr+cD2wJhM+axpeoZJc2c=">
+            <table:column id="c_fr_leburcom_svi_tickets_Ticket_subject" property="subject" z="zrHlcQoWKufWVi2cIeCp7cQPXIE="/>
+            <table:column id="c_fr_leburcom_svi_tickets_Ticket_component" property="component" z="or9iWM2qoDdbKSNIxIT3A+LlW1Q="/>
+            <table:column id="c_fr_leburcom_svi_tickets_Ticket_description" property="description" z="QdVKSZKJzTINsFE53jxB0LSlTE0="/>
+            <table:column date="true" dateTimePattern="${ticket_detectiondate_date_format}" id="c_fr_leburcom_svi_tickets_Ticket_detectionDate" property="detectionDate" z="SyGhHGpVSVvDVWaGeEJDN6ghLV0="/>
+            <table:column id="c_fr_leburcom_svi_tickets_Ticket_status" property="status" z="/VQRmpZrsKdmR1qx3cPC/FRL/6s="/>
+            <table:column id="c_fr_leburcom_svi_tickets_Ticket_client" property="client" z="UW5RExIJz1NMxMkzoONMMZQ/ceo="/>
+        </table:table>
+    </page:list>
+</div>

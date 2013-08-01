@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_fr_leburcom_svi_tickets_Developper" object="${developper}" path="/developpers" z="U2M8h7bPlLL4GfBGQxxEMszMcts=">
+        <field:display field="name" id="s_fr_leburcom_svi_tickets_Developper_name" object="${developper}" z="Gor8xUo+2F/iCLl+4UwRZQT6/es="/>
+        <field:display field="firstname" id="s_fr_leburcom_svi_tickets_Developper_firstname" object="${developper}" z="eWdEQSSVEr9H+yaOQAmwXTr8CPo="/>
+        <field:display field="email" id="s_fr_leburcom_svi_tickets_Developper_email" object="${developper}" z="w0zw+zVgz/9Aqcsm4RabHjBpX8I="/>
+        <field:display field="password" id="s_fr_leburcom_svi_tickets_Developper_password" object="${developper}" z="Gt9W/u4FFa1zUlbQ0uV/4yJixXU="/>
+    </page:show>
+</div>

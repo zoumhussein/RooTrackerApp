@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_fr_leburcom_svi_tickets_Client" items="${clients}" z="ZFOczXrgUk+ARDgdbhTXLFxLhB4=">
+        <table:table data="${clients}" id="l_fr_leburcom_svi_tickets_Client" path="/clients" z="YAo3kVLz2p5ize+1KW0PyWQJ80w=">
+            <table:column id="c_fr_leburcom_svi_tickets_Client_name" property="name" z="PUKAZ7cuPQpo6kCC2cqOEAQXarM="/>
+            <table:column id="c_fr_leburcom_svi_tickets_Client_firstname" property="firstname" z="WWJjvFrkb+Kg0F9pc7SBHUreQ44="/>
+            <table:column id="c_fr_leburcom_svi_tickets_Client_email" property="email" z="35ctNyq9RuWAH/KNwgoPrqPTZiY="/>
+            <table:column id="c_fr_leburcom_svi_tickets_Client_password" property="password" z="mZU0fOzddAqBMTuSuE0ks4GOqr0="/>
+        </table:table>
+    </page:list>
+</div>
